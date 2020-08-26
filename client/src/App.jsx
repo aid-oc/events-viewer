@@ -1,18 +1,16 @@
 import React from 'react';
-import { useQuery } from '@apollo/client';
-import getAllEvents from './graph/queries/getAllEvents';
-import EventList from './components/EventList';
+import EventSection from './components/EventSection/EventSection';
+import { Main, Header } from './App.styles';
 
-const App = () => {
-  const { loading, error, data } = useQuery(getAllEvents);
-  return (
-    <div className="App">
-      Feast It Events Viewer
-      { loading && <p>Loading Events...</p>}
-      { error && <p>Failure loading events, sorry!</p>}
-      { data && <EventList events={data.events} />}
-    </div>
-  );
-};
+const App = () => (
+  <div className="App">
+    <Main>
+      <Header>
+        <h1>Feast It</h1>
+      </Header>
+      <EventSection />
+    </Main>
+  </div>
+);
 
 export default App;
