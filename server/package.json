@@ -12,8 +12,7 @@
     "mongoose": "^5.10.0"
   },
   "scripts": {
-    "build": "babel ./src --out-dir dist",
-    "start": "yarn build && node ./dist/index.js"
+    "build": "babel ./src --out-dir dist"
   },
   "babel": {
     "presets": [
