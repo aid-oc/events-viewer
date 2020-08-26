@@ -1,6 +1,5 @@
 node_modules
 dist
 build
-client
 /server/results/**/*.jpg
 /server/results/**/*.png
