@@ -23,3 +23,4 @@
 - I chose to structure this as a mono repo but with split dependencies/linting, that way they can be split easily in the future whilst allowing for easier deployment / testing for the purposes of this interview test.
 - I decided to go with GraphQL as this is something I have been actively trying to gain more expose to recently, I think it's a fantastic tool and will likely take over in the future.
 - Styled-components was used on the frontend as I'm a big fan of how it allows you to keep styles as close to components as possible. 
+- The database contains two collections (Posters, Events), an Event entry references a poster by ID so that a poster can produce multiple events but keep a single poster entry as the source of truth for contact information.
