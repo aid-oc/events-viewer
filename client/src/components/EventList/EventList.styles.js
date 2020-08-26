@@ -7,6 +7,8 @@ const EventItem = styled.li`
     border-radius: 1rem;
     padding: 1rem;
     text-align: left;
+    justify-content: flex-start;
+
     max-width: 20rem;
 
     -webkit-box-shadow :0px 3px 15px rgba(0,0,0,0.2);
@@ -14,7 +16,7 @@ const EventItem = styled.li`
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     
     @media (min-width: 768px)  {
-        justify-content: space-around;
+        justify-content: flex-start;
         margin: 2rem;
     }
 `;

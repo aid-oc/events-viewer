@@ -8,7 +8,14 @@ const Section = styled.section`
 const Search = styled.input`
     border: 1px solid black;
     border-radius: 0.3rem;
-    min-width: 15rem;
+    font-size: 1.2rem;
 `;
 
-export { Section, Search };
+const FilteringOptions = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+`;
+
+export { Section, Search, FilteringOptions };
