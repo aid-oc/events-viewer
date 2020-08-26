@@ -1,0 +1,12 @@
+{
+  "name": "feast-it-events-test",
+  "version": "0.0.1",
+  "main": "./server/dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "ready-client": "cd client && yarn && yarn build",
+    "ready-server": "cd server && yarn && yarn build",
+    "heroku-postbuild": "yarn ready-client && yarn ready-server",
+    "start": "yarn heroku-postbuild && node ./server/dist/index.js"
+  }
+}
