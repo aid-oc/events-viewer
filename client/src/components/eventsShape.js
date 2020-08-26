@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 export const eventShape = PropTypes.shape({
+  id: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   guestCount: PropTypes.number.isRequired,

@@ -12,4 +12,10 @@ export default {
       }));
     },
   },
+  Mutation: {
+    deleteEvent: async (_, args) => {
+      (await Event.findOne(Types.ObjectId(args.id))).remove();
+      return args.id;
+    },
+  },
 };

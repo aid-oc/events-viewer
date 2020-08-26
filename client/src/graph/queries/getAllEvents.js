@@ -10,6 +10,7 @@ export default gql`
         phone
       }
       event {
+        id
         description
         date
         guestCount

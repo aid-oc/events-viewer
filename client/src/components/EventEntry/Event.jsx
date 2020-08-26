@@ -1,13 +1,21 @@
 import React from 'react';
+import { useMutation } from '@apollo/client';
 import { eventShape } from '../eventsShape';
 import { EventDetails, EventWarning } from './Event.styles';
+import deleteMutation from '../../graph/mutations/deleteEvent';
+import getAllEvents from '../../graph/queries/getAllEvents';
 
 const Event = ({
   event,
 }) => {
   const {
-    description, date, guestCount, type, postcode, address, cancelled, budget, dietary,
+    id, description, date, guestCount, type,
+    postcode, address, cancelled, budget, dietary,
   } = event;
+  const [deleteEvent] = useMutation(deleteMutation, {
+    variables: { id },
+    refetchQueries: [{ query: getAllEvents }],
+  });
   return (
     <EventDetails>
 
@@ -42,7 +50,12 @@ const Event = ({
         <b>Location: </b>
         {`${postcode}, ${address}`}
       </p>
-      {cancelled && <EventWarning>This event has been cancelled.</EventWarning> }
+      {cancelled && (
+      <>
+        <EventWarning>This event has been cancelled.</EventWarning>
+        <button type="button" onClick={() => { deleteEvent(); }}>Delete (Actually)</button>
+      </>
+      )}
     </EventDetails>
   );
 };

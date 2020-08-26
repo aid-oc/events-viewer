@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "5f4686a947906022449aa766"
+  },
+  "description": "I am hosting a boys night and would like pizza and beer",
+  "date": "10/25/2021",
+  "guestCount": 7,
+  "type": "Party",
+  "postcode": "WF9 3NY",
+  "address": "8 Park Estate",
+  "cancelled": false,
+  "budget": 300,
+  "dietary": null,
+  "posterId": "5f4684e647906022449aa763"
+},{
+  "_id": {
+    "$oid": "5f4686f747906022449aa767"
+  },
+  "description": "For my wedding I would like to have something classy. Must be veggie.",
+  "date": "02/17/2021",
+  "guestCount": 300,
+  "type": "Wedding",
+  "postcode": "NG2 5FQ",
+  "address": "10 Rosebery Avenue",
+  "cancelled": false,
+  "budget": 5000,
+  "dietary": [
+    "vegetarian"
+  ],
+  "posterId": "5f46853247906022449aa764"
+},{
+  "_id": {
+    "$oid": "5f46874947906022449aa768"
+  },
+  "description": "Office Christmas Party. Finger Foods. Drinks",
+  "date": "05/12/2021",
+  "guestCount": 35,
+  "type": "Corporate",
+  "postcode": "E1 1EW",
+  "address": "20-30 Whitechapel Rd",
+  "cancelled": true,
+  "budget": 3000,
+  "dietary": [
+    "vegetarian",
+    "vegan",
+    "nut free"
+  ],
+  "posterId": "5f46855f47906022449aa765"
+}]

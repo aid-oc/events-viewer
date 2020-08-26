@@ -9,6 +9,7 @@ export default gql`
   }
 
   type Event {
+    id: String
     description: String
     date: String
     guestCount: Int
@@ -29,7 +30,12 @@ export default gql`
     events: [EventListing]
   }
 
+  type Mutation {
+    deleteEvent(id: String): String
+  }
+
   schema {
     query: Query
+    mutation: Mutation
   }
 `;
