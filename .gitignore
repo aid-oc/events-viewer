@@ -3,3 +3,4 @@ dist
 build
 /server/results/**/*.jpg
 /server/results/**/*.png
+yarn-error.log
