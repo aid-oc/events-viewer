@@ -9,5 +9,7 @@ module.exports = {
     ecmaVersion: 12,
   },
   plugins: [],
-  rules: {},
+  rules: {
+    'linebreak-style': ['error', 'windows'],
+  },
 };

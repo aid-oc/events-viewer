@@ -22,5 +22,7 @@ module.exports = {
     'react',
   ],
   rules: {
+    'linebreak-style': ['error', 'windows'],
+    'react/jsx-props-no-spreading': 'off',
   },
 };
