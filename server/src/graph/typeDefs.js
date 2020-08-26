@@ -17,7 +17,7 @@ export default gql`
     address: String
     cancelled: Boolean
     budget: Float
-    dietary: String
+    dietary: [String]
   }
 
   type EventListing {
