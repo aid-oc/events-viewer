@@ -12,7 +12,8 @@
     "mongoose": "^5.10.0"
   },
   "scripts": {
-    "build": "babel ./src --out-dir dist"
+    "build": "babel ./src --out-dir dist",
+    "test": "./node_modules/.bin/jest"
   },
   "babel": {
     "presets": [
