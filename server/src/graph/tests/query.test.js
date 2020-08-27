@@ -5,7 +5,7 @@ import PosterModel from '../../mongo/models/poster';
 import createGraphServer from '../createGraphServer';
 import { createPoster, createEvent } from './query.helpers';
 
-describe('Mongo Model Tests', () => {
+describe('Query Tests', () => {
   beforeAll(async () => {
     await mongoose.connect(process.env.MONGO_URL, {
       useNewUrlParser: true,

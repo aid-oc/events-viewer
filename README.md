@@ -5,6 +5,21 @@
 1) In the root of the repository, `yarn start` is sufficient to install dependencies, build and start the project.
 2) You can then visit `http://localhost:5000` to see the application and Graph can be queried directly at `http://localhost:5000/graphql`
 
+Otherwise, visit http://warm-sierra-56371.herokuapp.com/
+
+### Testing
+
+- Build both projects using `yarn heroku-postbuild` or `yarn start`
+- Run `yarn test` to run both tests for both client and server (they can still be ran using `yarn test` in each respective subfolder)
+
+Notes: 
+
+Backend logic was tested using standalone Mongo tests (submission, retrieval) and a collection of integration tests. The integration tests configure the graph server to run against the testing mongo database and then executes queries after inserting data.
+
+Frontend code has been tested using a reacting testing library and has focused heavily on snapshot tests. This was done as the majority of the components provide little interaction and so snapshoting the component content was enough to assert that they have displayed correctly.
+
+More complex components (those which interact with graph) have either had their queries/mutations mocked using Apollo's `<MockedProvider />`, such is the case with `Event.test.jsx`. I chose to mock the dependencies with `<EventSection />` so that I can demonstrate the usage and abstract away the graph complexity as my goal with testing that component was to see how it reacts to different variants of `{ loading, error, data }`
+
 ### Deployment
 
 * I chose to deploy the site using Heroku as this is a tool I'm familiar with, it's accessible at: http://warm-sierra-56371.herokuapp.com/

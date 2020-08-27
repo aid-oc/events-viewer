@@ -6,6 +6,9 @@
   "scripts": {
     "ready-client": "cd client && yarn && yarn build",
     "ready-server": "cd server && yarn && yarn build",
+    "test-client": "cd client && yarn test -- --watchAll=false",
+    "test-server": "cd server && yarn test",
+    "test": "yarn test-client && yarn test-server",
     "heroku-postbuild": "yarn ready-client && yarn ready-server",
     "start": "yarn heroku-postbuild && node ./server/dist/index.js"
   }

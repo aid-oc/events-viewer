@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "babel ./src --out-dir dist",
-    "test": "./node_modules/.bin/jest"
+    "test": "./node_modules/.bin/jest ./src"
   },
   "babel": {
     "presets": [
