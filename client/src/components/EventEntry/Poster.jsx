@@ -12,13 +12,11 @@ const Poster = ({ poster }) => {
     <PosterArea>
       <img src={image} alt={`${name}`} />
       <h4><b>{name}</b></h4>
-      <span>
-        <a href={`mailto: ${email}`}>
-          <FontAwesomeIcon icon={faEnvelope} />
-        </a>
+      <a href={`mailto: ${email}`}>
+        <FontAwesomeIcon icon={faEnvelope} />
         {` ${email}`}
-      </span>
-      <p>{phone}</p>
+      </a>
+      <a href={`tel:${phone}`}>{phone}</a>
     </PosterArea>
   );
 };
