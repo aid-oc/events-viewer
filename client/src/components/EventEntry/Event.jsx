@@ -4,6 +4,7 @@ import { eventShape } from '../eventsShape';
 import { EventDetails, EventWarning } from './Event.styles';
 import deleteMutation from '../../graph/mutations/deleteEvent';
 import getAllEvents from '../../graph/queries/getAllEvents';
+import EventInfo from './EventInfo';
 
 const Event = ({
   event,
@@ -18,42 +19,36 @@ const Event = ({
   });
   return (
     <EventDetails>
-
-      <p>
-        <b>Date: </b>
-        {`${date}`}
-      </p>
-      <p>
-        <b>Budget: </b>
+      <EventInfo title="Date">
+        {date}
+      </EventInfo>
+      <EventInfo title="Budget">
         {`£${budget}`}
-      </p>
-      <p>
-        <b>Guests: </b>
+      </EventInfo>
+      <EventInfo title="Guests">
         {guestCount}
-      </p>
-      <p>
-        <b>Event Type: </b>
+      </EventInfo>
+      <EventInfo title="Event Type">
         {type}
-      </p>
-      <p>
-        <b>Description: </b>
+      </EventInfo>
+      <EventInfo title="Description">
         {description}
-      </p>
-      {dietary && dietary.length && (
-      <p>
-        <b>Dietary: </b>
+      </EventInfo>
+      {dietary && dietary.length
+      && (
+      <EventInfo title="Dietary">
         {dietary.join(', ')}
-      </p>
+      </EventInfo>
       )}
-
-      <p>
-        <b>Location: </b>
+      <EventInfo title="Location">
         {`${postcode}, ${address}`}
-      </p>
+      </EventInfo>
       {cancelled && (
       <>
         <EventWarning>This event has been cancelled.</EventWarning>
-        <button type="button" onClick={() => { deleteEvent(); }}>Delete (Actually)</button>
+        <button type="button" onClick={() => deleteEvent()}>
+          Delete (Actually)
+        </button>
       </>
       )}
     </EventDetails>

@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Event /> Should match snapshot, showing cancellation warning if provided 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AxjAm jfXUMh"
+  >
+    <p>
+      <b>
+        Date: 
+      </b>
+      27/08/2020
+    </p>
+    <p>
+      <b>
+        Budget: 
+      </b>
+      £400
+    </p>
+    <p>
+      <b>
+        Guests: 
+      </b>
+      4
+    </p>
+    <p>
+      <b>
+        Event Type: 
+      </b>
+      someType
+    </p>
+    <p>
+      <b>
+        Description: 
+      </b>
+      someDescription
+    </p>
+    <p>
+      <b>
+        Location: 
+      </b>
+      somePostcode, someAddress
+    </p>
+    <p
+      class="sc-AxirZ jEjlEh"
+    >
+      This event has been cancelled.
+    </p>
+    <button
+      type="button"
+    >
+      Delete (Actually)
+    </button>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Event /> Should match snapshot, showing dietary if provided 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AxjAm jfXUMh"
+  >
+    <p>
+      <b>
+        Date: 
+      </b>
+      27/08/2020
+    </p>
+    <p>
+      <b>
+        Budget: 
+      </b>
+      £400
+    </p>
+    <p>
+      <b>
+        Guests: 
+      </b>
+      4
+    </p>
+    <p>
+      <b>
+        Event Type: 
+      </b>
+      someType
+    </p>
+    <p>
+      <b>
+        Description: 
+      </b>
+      someDescription
+    </p>
+    <p>
+      <b>
+        Dietary: 
+      </b>
+      vegetarian
+    </p>
+    <p>
+      <b>
+        Location: 
+      </b>
+      somePostcode, someAddress
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Event /> Should match snapshot, shows event data, no dietary or cancellation warning if not provided 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AxjAm jfXUMh"
+  >
+    <p>
+      <b>
+        Date: 
+      </b>
+      27/08/2020
+    </p>
+    <p>
+      <b>
+        Budget: 
+      </b>
+      £400
+    </p>
+    <p>
+      <b>
+        Guests: 
+      </b>
+      4
+    </p>
+    <p>
+      <b>
+        Event Type: 
+      </b>
+      someType
+    </p>
+    <p>
+      <b>
+        Description: 
+      </b>
+      someDescription
+    </p>
+    <p>
+      <b>
+        Location: 
+      </b>
+      somePostcode, someAddress
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Event /> Should perform a mutation without issues preventing a successful render 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AxjAm jfXUMh"
+  >
+    <p>
+      <b>
+        Date: 
+      </b>
+      27/08/2020
+    </p>
+    <p>
+      <b>
+        Budget: 
+      </b>
+      £400
+    </p>
+    <p>
+      <b>
+        Guests: 
+      </b>
+      4
+    </p>
+    <p>
+      <b>
+        Event Type: 
+      </b>
+      someType
+    </p>
+    <p>
+      <b>
+        Description: 
+      </b>
+      someDescription
+    </p>
+    <p>
+      <b>
+        Location: 
+      </b>
+      somePostcode, someAddress
+    </p>
+    <p
+      class="sc-AxirZ jEjlEh"
+    >
+      This event has been cancelled.
+    </p>
+    <button
+      type="button"
+    >
+      Delete (Actually)
+    </button>
+  </div>
+</DocumentFragment>
+`;

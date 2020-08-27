@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EventInfo /> Should match snapshot, correctly displaying title and children 1`] = `
+<DocumentFragment>
+  <p>
+    <b>
+      hello: 
+    </b>
+    testChild
+  </p>
+</DocumentFragment>
+`;
