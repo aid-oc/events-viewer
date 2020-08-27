@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EventSection /> Should display a loading state when the query has not yet fetched data 1`] = `
+<DocumentFragment>
+  <section
+    class="sc-AxgMl inBwNf"
+  >
+    <h2>
+      Event Postings
+    </h2>
+    <input
+      class="sc-AxheI gEtOKP"
+      placeholder="Search..."
+      type="search"
+    />
+    <div
+      class="sc-Axmtr hYuCOA"
+    >
+      <label
+        for="showCancelledEvents"
+      >
+        <input
+          id="showCancelledEvents"
+          name="showCancelledEvents"
+          type="checkbox"
+        />
+        Hide cancelled events?
+      </label>
+    </div>
+    <p>
+      Loading Events...
+    </p>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`<EventSection /> Should display an error state when the query fails 1`] = `
+<DocumentFragment>
+  <section
+    class="sc-AxgMl inBwNf"
+  >
+    <h2>
+      Event Postings
+    </h2>
+    <input
+      class="sc-AxheI gEtOKP"
+      placeholder="Search..."
+      type="search"
+    />
+    <div
+      class="sc-Axmtr hYuCOA"
+    >
+      <label
+        for="showCancelledEvents"
+      >
+        <input
+          id="showCancelledEvents"
+          name="showCancelledEvents"
+          type="checkbox"
+        />
+        Hide cancelled events?
+      </label>
+    </div>
+    <p>
+      Failure loading events, sorry!
+    </p>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`<EventSection /> Should display data if the query was successful 1`] = `
+<DocumentFragment>
+  <section
+    class="sc-AxgMl inBwNf"
+  >
+    <h2>
+      Event Postings
+    </h2>
+    <input
+      class="sc-AxheI gEtOKP"
+      placeholder="Search..."
+      type="search"
+    />
+    <div
+      class="sc-Axmtr hYuCOA"
+    >
+      <label
+        for="showCancelledEvents"
+      >
+        <input
+          id="showCancelledEvents"
+          name="showCancelledEvents"
+          type="checkbox"
+        />
+        Hide cancelled events?
+      </label>
+    </div>
+    <ul
+      class="sc-AxhUy gQZmaM"
+    />
+  </section>
+</DocumentFragment>
+`;
