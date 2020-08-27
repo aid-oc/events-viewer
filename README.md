@@ -5,7 +5,7 @@
 1) In the root of the repository, `yarn start` is sufficient to install dependencies, build and start the project.
 2) You can then visit `http://localhost:5000` to see the application and Graph can be queried directly at `http://localhost:5000/graphql`
 
-Otherwise, visit http://warm-sierra-56371.herokuapp.com/
+Otherwise, visit http://warm-sierra-56371.herokuapp.com/, please note this is a free dyno and will take a while to spin up on first use.
 
 ### Testing
 
@@ -22,7 +22,7 @@ More complex components (those which interact with graph) have either had their 
 
 ### Deployment
 
-* I chose to deploy the site using Heroku as this is a tool I'm familiar with, it's accessible at: http://warm-sierra-56371.herokuapp.com/
+* I chose to deploy the site using Heroku as this is a tool I'm familiar with, it's accessible at: http://warm-sierra-56371.herokuapp.com/. Note this is a free dyno and will take a while to spin up on first use.
 * The database is deployed with MongoDB cloud, the connection string is sourced from a `.env`  file which was commited purely for demo reasons, in a real environment sensitive information would be pulled from a secure key store.
 
 ### Functionality
