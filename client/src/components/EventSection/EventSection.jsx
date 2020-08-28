@@ -3,14 +3,7 @@ import { useQuery } from '@apollo/client';
 import getAllEvents from '../../graph/queries/getAllEvents';
 import EventList from '../EventList/EventList';
 import { Section, Search, FilteringOptions } from './EventSection.styles';
-
-const filterEvents = (filter, hideCancelled, events) => events.filter((eventEntry) => {
-  const eventData = JSON.stringify(eventEntry.event);
-  const posterData = JSON.stringify(eventEntry.poster);
-  const shouldHide = hideCancelled && eventEntry.event.cancelled;
-  return !shouldHide && (!filter
-   || eventData.includes(filter) || posterData.includes(filter));
-});
+import filterEvents from './helpers/filterEvents';
 
 const EventSection = () => {
   const { loading, error, data } = useQuery(getAllEvents);
