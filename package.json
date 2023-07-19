@@ -1,5 +1,5 @@
 {
-  "name": "feast-it-events-test",
+  "name": "react-node-mongo-refresher",
   "version": "0.0.1",
   "main": "./server/dist/index.js",
   "license": "MIT",
