@@ -26,6 +26,6 @@ graphServer.applyMiddleware({ app });
       );
     });
   } catch (e) {
-    console.error(`Feast-It Events Graph Server - Failed to boot with ${e}`);
+    console.error(`React/Node/Mongo Refresher - Failed to boot with ${e}`);
   }
 })();
